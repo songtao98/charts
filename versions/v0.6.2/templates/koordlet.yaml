@@ -32,6 +32,8 @@ spec:
           - -runtime-hooks=AllAlpha=true
           - -runtime-hooks-network=unix
           - -runtime-hooks-addr=/host-var-run-koordlet/koordlet.sock
+          - -runtime-hooks-failure-policy=Ignore
+          - -runtime-hooks-config-path=/host-etc-hookserver-test/
           - --logtostderr=true
           - --v={{ .Values.koordlet.log.level }}
           image: {{ .Values.imageRepositoryHost }}/{{ .Values.koordlet.image.repository }}:{{ .Values.koordlet.image.tag }}
@@ -72,6 +74,9 @@ spec:
             - mountPath: /etc/kubernetes/
               name: host-kubernetes
               readOnly: true
+            - mountPath: /host-etc-hookserver/
+              name: host-etc-hookserver
+              mountPropagation: Bidirectional
       tolerations:
         - operator: Exists
       hostNetwork: true
@@ -107,3 +112,7 @@ spec:
             path: /etc/kubernetes/
             type: ""
           name: host-kubernetes
+        - hostPath:
+            path: /etc/runtime/hookserver.d
+            type: ""
+          name: host-etc-hookserver
