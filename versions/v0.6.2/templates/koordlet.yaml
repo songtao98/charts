@@ -113,6 +113,6 @@ spec:
             type: ""
           name: host-kubernetes
         - hostPath:
-            path: /etc/runtime/hookserver.d
+            path: /etc/runtime/hookserver.d/
             type: ""
           name: host-etc-hookserver
