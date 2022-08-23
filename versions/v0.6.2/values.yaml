@@ -7,7 +7,7 @@ crds:
 
 # values for koordinator installation
 installation:
-  namespace: koordinator-system
+  namespace: manou-koordinator-system-test
   roleListGroups:
     - '*'
 
