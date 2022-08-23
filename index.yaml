@@ -3,9 +3,9 @@ entries:
   koordinator:
   - apiVersion: v2
     appVersion: 0.6.2
-    created: "2022-08-23T11:52:07.868649+08:00"
+    created: "2022-08-23T12:05:12.659938+08:00"
     description: A Helm chart for Koordinator
-    digest: eb30189d1cc65be824d13dea5e66b291c7cfb90eb9c7f097da849002eb05d796
+    digest: 01d66d3924ec69f4f015a8ca41985af2dbd161efd731b2f8775b660ddf2581f9
     home: https://koordinator.sh
     icon: https://koordinator.sh/img/logo.svg
     keywords:
@@ -14,9 +14,9 @@ entries:
     - mixed-workloads
     name: koordinator
     sources:
-    - https://github.com/songtao98/koordinator
+    - https://github.com/songtao98/koordinator/tree/add_auto_register_hooks
     type: application
     urls:
     - https://songtao98.github.io/charts/koordinator-0.6.2.tgz
     version: 0.6.2
-generated: "2022-08-23T11:52:07.867244+08:00"
+generated: "2022-08-23T12:05:12.656604+08:00"

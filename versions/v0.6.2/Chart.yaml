@@ -11,4 +11,4 @@ keywords:
   - mixed-workloads
 home: https://koordinator.sh
 sources: 
-  - https://github.com/songtao98/koordinator
+  - https://github.com/songtao98/koordinator/tree/add_auto_register_hooks
