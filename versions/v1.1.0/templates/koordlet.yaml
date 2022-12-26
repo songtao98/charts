@@ -29,7 +29,7 @@ spec:
             - /koordlet
           args:
           - -cgroup-root-dir=/host-cgroup/
-          - -feature-gates=AllAlpha=true,PerformanceCollector=false
+          - -feature-gates=AllAlpha=true,CPICollector=false,PSICollector=false
           - -runtime-hooks=AllAlpha=true
           - -runtime-hooks-network=unix
           - -runtime-hooks-addr=/host-var-run-koordlet/koordlet.sock
